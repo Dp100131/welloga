@@ -1,0 +1,68 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNEMONIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/CSS/mnemonic.css">
+
+</head>
+<body>
+    <header>
+
+        <img src="../static/images/logo.png" width="50px" height="50px" alt="">
+        
+    </header>
+    <main class="login">
+
+        <h1 class="logo">MNEMONIC</h1>
+
+        <h2>Si no se encuentra el mnemonico en el registro por favor ingrese: 'N/A'</h2>
+        <br>
+        <br>
+
+        <div class="container">
+
+            <aside>
+
+                <ul class="mnemonic">
+    
+                    {% for i in mnemonics %}
+        
+                        <li> {{ i }}</li>
+        
+                    {% endfor %}
+        
+                </ul>
+    
+            </aside>
+    
+            <div class="form-container">
+    
+    
+                <form action="" method="POST" class="form">
+    
+                    {{ wtf.quick_form(mnemonic_form) }}
+    
+                </form>
+    
+    
+            </div>
+
+        </div>
+
+        <img src="" id="plot">
+
+
+
+    </main>
+
+    
+</body>
+</html>

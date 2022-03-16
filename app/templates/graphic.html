@@ -1,0 +1,55 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/CSS/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+
+        <img src="../static/images/logo.png" width="50px" height="50px" alt="">
+        
+    </header>
+    <main class="login">
+
+        <h1 class="logo">PLOTS</h1>
+
+        <ul>
+            <li>GR: Green.</li>
+            <li>GRcorr: Blue.</li>
+            <li>SP: Black.</li>
+            <li>DPHI: Red.</li>
+            <li>DRHO: Yellow</li>
+            <li>ILM: Blue</li>
+            <li>ILD: Orange</li>
+            <li>SFLU: Black</li>
+            <li>CALX: Brown</li>
+            <li>PEF: Gray</li>
+            <li>NPHI: Gold</li>
+            <li>Vsh: Green</li>
+            <li>Vsh_Corr: Blue</li>
+        </ul>
+        
+        <img src="" id="plot">
+
+    </main>
+
+
+    <script>
+        $(document).ready(function(){
+            $.get("/plot", function(data){
+                $("#plot").attr("src", "data:image/png;base64,"+data);
+            });
+        });
+    </script>
+</body>
+</html>

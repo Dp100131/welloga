@@ -1,0 +1,167 @@
+:root{
+
+    --very-light-pink: #C7C7C7;
+    --whithe: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --greenUis: #229954;
+    --dark: #232830;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+html{
+
+    font-size: 62.5%;
+
+}
+
+body{
+
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    margin: 25%;
+
+}
+
+.logo{
+
+    font-size: 400%;
+    text-align: center;
+
+}
+
+
+main .form-container{
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+main .form-container{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .form-container{
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+
+}
+
+#custom-button{
+
+    background-color: var(--greenUis);
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    border-radius: 0.8rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#custom-button:hover{
+
+    background-color: var(--text-input-field);
+    color: var(--greenUis);
+
+}
+
+#custom-text{
+
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+footer{
+
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    color: #C7C7C7;
+
+}
+header{
+
+    align-items: left;
+
+}
+/* 
+.input-email{
+
+    margin-bottom: 2.2rem;
+
+}
+
+main .form-container .form .primary-button{
+
+    background-color: var(--greenUis);
+    border: none;
+    border-radius: 0.8rem;
+    color: var(--whithe);
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 5rem;
+
+}
+
+main .form-container .form a{
+
+    color: var(--greenUis);
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5.2rem;
+
+}
+
+.login-button{
+
+    margin-top: 1.4rem;
+    margin-bottom: 3rem;
+
+}
+
+main .form-container .secundary-button{
+
+    background-color: var(--whithe);
+    border: 0.1rem solid var(--greenUis);
+    border-radius: 0.8rem;
+    color: var(--greenUis);
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 5rem;
+
+} */

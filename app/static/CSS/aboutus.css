@@ -1,0 +1,122 @@
+:root{
+
+    --very-light-pink: #C7C7C7;
+    --whithe: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --greenUis: #229954;
+    --dark: #232830;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+html{
+
+    font-size: 62.5%;
+
+}
+
+body{
+
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+
+}
+
+header{
+
+    align-items: center;
+    width: 100%;
+    display: grid;
+
+}
+
+header img{
+
+    width: 10rem;
+    margin-top: 1rem;
+
+}
+
+.logo_welloga{
+
+    margin-left: 46%;
+
+}
+
+.creators{
+
+    text-align: center;
+
+}
+
+.problema{
+
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.problema h1{
+
+    text-align: center;
+
+}
+
+.problema p{
+
+    text-align: justify;
+
+}
+
+.objetivos{
+
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.objetivos h1{
+
+    text-align: center;
+
+}
+.objetivos h2{
+
+    text-align: center;
+
+}
+
+.objetivos ul li{
+
+    text-align: justify;
+
+}
+
+.Recursos{
+
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.Recursos h1{
+
+    text-align: center;
+
+}
+
+.Recursos ul li{
+
+    text-align: justify;
+
+}

@@ -1,0 +1,11 @@
+flask
+flask-bootstrap
+flask-wtf
+flask-testing
+blinker
+lasio
+numpy
+pandas
+matplotlib
+werkzeug
+gunicorn
